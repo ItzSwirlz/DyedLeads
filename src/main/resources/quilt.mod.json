@@ -2,10 +2,10 @@
 	"schema_version": 1,
 	"quilt_loader": {
 		"group": "${group}",
-		"id": "example_mod",
+		"id": "dyedleads",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
+			"name": "Dyed Leads",
 			"description": "A short description of your mod.",
 			"contributors": {
 				"Your name here": "Owner"
@@ -19,7 +19,8 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "com.itzswirlz.DyedLeads.DyedLeads",
+			"client_init": "com.itzswirlz.DyedLeads.DyedLeadsClient"
 		},
 		"depends": [
 			{
@@ -36,5 +37,5 @@
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "dyedleads.mixins.json"
 }
